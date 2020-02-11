@@ -2,7 +2,7 @@ declare module 'aws-amplify-react-native' {
   const Amplify: any;
   export default Amplify;
 
-  // *** BASE ***
+  // *** UI ***
   interface iTheme {
     container: {};
     section: {};
@@ -193,22 +193,20 @@ declare module 'aws-amplify-react-native' {
   export const Connect: React.ComponentClass<iConnectProps>;
 
   // *** STORAGE ***
-  interface iS3ImageProps {
+  interface iS3ImageProps extends iUIProps {
     imgKey?: string;
-    level?: any;
+    level?: string;
     body?: any;
     contentType?: string;
     style?: string;
     resizeMode?: string;
-    theme?: iTheme;
   }
   export const S3Image: React.ComponentClass<iS3ImageProps>;
 
-  interface iS3AlbumProps {
+  interface iS3AlbumProps extends iUIProps {
     path?: string;
     level?: string;
-    filter?: (data: any) => any;
-    theme?: iTheme;
+    filter?: (data: any) => boolean;
     [propName: string]: any;
   }
   export const S3Album: React.ComponentClass<iS3AlbumProps>;
