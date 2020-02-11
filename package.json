@@ -1,0 +1,24 @@
+{
+  "name": "amplifyreactnativetypes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-amplify": "^2.2.4",
+    "aws-amplify-react-native": "^3.2.2",
+    "react": "^16.12.0",
+    "react-native": "^0.61.5"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "0.0.7",
+    "@types/react-native": "^0.61.12",
+    "eslint": "^6.8.0",
+    "typescript": "^3.7.5"
+  }
+}
