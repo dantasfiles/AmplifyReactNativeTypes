@@ -14,8 +14,8 @@ import {withOAuth} from 'aws-amplify-react-native';
 
 interface iAppProps {
   loading: boolean;
-  oAuthUser: any;
-  oAuthError: any;
+  oAuthUser: unknown;
+  oAuthError: unknown;
   hostedUISignIn: () => void;
   facebookSignIn: () => void;
   amazonSignIn: () => void;
@@ -24,7 +24,7 @@ interface iAppProps {
   signOut: () => void;
 }
 
-class App extends React.Component<iAppProps, any> {
+class App extends React.Component<iAppProps> {
   render() {
     const {
       oAuthUser: user,

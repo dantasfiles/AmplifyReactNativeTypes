@@ -184,11 +184,15 @@ declare module 'aws-amplify-react-native' {
   ): React.ComponentClass<iWithOAuthProps>;
 
   // *** API ***
+  interface iGraphQLOperation {
+    query: any;
+    variables: {};
+  }
   interface iConnectProps {
-    query?: any;
-    mutation?: any;
-    subscription?: any;
-    onSubscriptionMsg?: (prevData: any) => any;
+    query?: iGraphQLOperation;
+    mutation?: iGraphQLOperation;
+    subscription?: iGraphQLOperation;
+    onSubscriptionMsg?: (prevData: any, data: any) => any;
   }
   export const Connect: React.ComponentClass<iConnectProps>;
 

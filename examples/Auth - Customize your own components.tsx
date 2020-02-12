@@ -16,7 +16,7 @@ function App() {
 }
 
 interface iMyCustomSignUpProps {
-  onStateChange?: (state: string, data: any) => void;
+  onStateChange?: (state: string, data: unknown) => void;
   authState?: string;
 }
 class MyCustomSignUp extends AuthPiece {

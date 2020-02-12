@@ -23,8 +23,8 @@ function refreshToken() {
 
 interface iMyAppProps {
   loading: boolean;
-  oAuthUser: any;
-  oAuthError: any;
+  oAuthUser: unknown;
+  oAuthError: unknown;
   hostedUISignIn: () => void;
   facebookSignIn: () => void;
   amazonSignIn: () => void;
@@ -32,7 +32,7 @@ interface iMyAppProps {
   customProviderSignIn: (provider: string) => void;
   signOut: () => void;
 }
-class MyApp extends React.Component<iMyAppProps, any> {
+class MyApp extends React.Component<iMyAppProps> {
   // ...
   render() {
     return (
