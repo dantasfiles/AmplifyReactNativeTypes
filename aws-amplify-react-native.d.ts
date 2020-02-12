@@ -38,7 +38,6 @@ declare module 'aws-amplify-react-native' {
   }
 
   interface iFormFieldProps extends iUIProps {
-    theme?: iTheme;
     label?: string;
     required?: boolean;
     [propName: string]: any;
