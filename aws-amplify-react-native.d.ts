@@ -161,7 +161,7 @@ declare module 'aws-amplify-react-native' {
     signedInMessage?: string;
     signedOutMessage?: string;
   }
-  export const Greetings: React.ComponentClass<iGreetingsProps, any>;
+  export const Greetings: React.ComponentClass<iGreetingsProps>;
 
   interface iWithOAuthProps {
     oauth_config?: any;
