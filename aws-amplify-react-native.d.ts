@@ -6,14 +6,17 @@ declare module 'aws-amplify-react-native' {
   interface iTheme {
     container: {};
     section: {};
+    sectionScroll: {};
     sectionHeader: {};
     sectionHeaderText: {};
     sectionFooter: {};
     sectionFooterLink: {};
+    sectionFooterLinkDisabled: {};
     navBar: {};
     navButton: {};
     cell: {};
     errorRow: {};
+    errorRowIcon: {};
     errorRowText: {};
     photo: {};
     album: {};
@@ -27,6 +30,7 @@ declare module 'aws-amplify-react-native' {
     phoneInput: {};
     picker: {};
     pickerItem: {};
+    signedOutMessage: {};
   }
 
   export const AmplifyTheme: iTheme;
